@@ -1,0 +1,155 @@
+/* Theme Variables */
+:root {
+  --bg-color: #B12625;
+  --container-bg: rgba(255, 255, 255, 0.1);
+  --text-color: #fff;
+  --button-bg: #fff;
+  --button-text: #0f387d;
+  --button-hover-bg: #0f387d;
+  --button-hover-text: #fff;
+  --display-bg: #000;
+  --display-color: #0f0;
+}
+
+/* Dark theme overrides */
+body.dark-theme {
+  --bg-color: linear-gradient(135deg, #121212, #333);
+  --container-bg: rgba(0, 0, 0, 0.6);
+  --text-color: #e0e0e0;
+  --button-bg: #333;
+  --button-text: #e0e0e0;
+  --button-hover-bg: #555;
+  --button-hover-text: #fff;
+  --display-bg: #222;
+  --display-color: #0ff;
+}
+
+/* General Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Stopwatch Container */
+.stopwatch-container {
+  text-align: center;
+  background: var(--container-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Display Timer */
+#display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  background: var(--display-bg);
+  color: var(--display-color);
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 8px rgba(0, 255, 0, 0.6);
+  transition: background 0.3s ease, color 0.3s ease;
+  word-break: break-word;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 1 1 auto;
+  min-width: 90px;
+}
+
+.buttons button:hover {
+  background-color: var(--button-hover-bg);
+  color: var(--button-hover-text);
+  transform: scale(1.05);
+}
+
+/* Laps List */
+#laps {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#laps li {
+  background: rgba(0,0,0,0.6);
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Mobile Responsiveness */
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  #display {
+    font-size: 2rem;
+    padding: 12px 20px;
+  }
+
+  .buttons button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    min-width: 80px;
+  }
+}
+
+/* Mobile Phones (≤480px) */
+@media (max-width: 480px) {
+  .stopwatch-container {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  #display {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  #laps li {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+}

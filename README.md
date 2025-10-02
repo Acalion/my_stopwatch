@@ -1,28 +1,28 @@
-# ⏱️ Pro Stopwatch
+#  Pro Stopwatch
 
 A simple, beautiful, responsive **Stopwatch** web app built with **HTML**, **CSS**, and **Vanilla JavaScript**.  
 
-## ✨ Features
-- ⏲️ Hours / Minutes / Seconds / Milliseconds display  
-- ▶️ Start / ⏸ Stop / 🔄 Reset controls  
-- 🏷️ Lap recording  
-- 🌙 Dark/Light theme toggle  
-- 📱 Responsive design for desktop & mobile  
-- 🎨 Clean UI with hover effects and digital clock styling  
+##  Features
+-  Hours / Minutes / Seconds / Milliseconds display  
+-  Start / ⏸ Stop /  Reset controls  
+-  Lap recording  
+-  Dark/Light theme toggle  
+-  Responsive design for desktop & mobile  
+-  Clean UI with hover effects and digital clock styling  
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
-pro-stopwatch/
+my_stopwatch/
 ├─ index.html   # HTML structure
 ├─ styles.css    # Styling & responsiveness
 ├─ main.js    # Stopwatch logic
 └─ README.md    # Documentation
 ---
 
-## 🧭 How to Use
+##  How to Use
 - **Start** → Begin counting time  
 - **Stop** → Pause the timer (can resume with Start)  
 - **Reset** → Stop and reset to `00:00:00.00`  
@@ -40,13 +40,13 @@ pro-stopwatch/
 
 ---
 
-## 📱 Responsive Design
+##  Responsive Design
 - **Tablets (≤768px):** smaller display and button sizing  
 - **Mobile (≤480px):** buttons stack vertically, display resizes, lap list adjusts  
 
 ---
 
-## 🎯 Extra Enhancements
+##  Extra Enhancements
 - Collapsible Lap panel (for compact mobile UI)  
 - Persist dark/light theme using `localStorage`  
 - Export laps as CSV file  
@@ -68,7 +68,7 @@ pro-stopwatch/
 
 ---
 
-## 📦 Deployment
+##  Deployment
 As a static project, this can be deployed easily with:  
 - **GitHub Pages**  
 - **Netlify**  
@@ -77,17 +77,17 @@ As a static project, this can be deployed easily with:
 
 ---
 
-## 🧾 License
+##  License
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.  
 
 ---
 
-## ✍️ Author
+##  Author
 **Segun Owolabi Olaniyi**  
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 Contributions are welcome!  
 
 1. Fork the repository  
